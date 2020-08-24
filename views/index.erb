@@ -1,0 +1,10 @@
+
+<h1>Welcome to the Cookbook!"</h1>
+<p></p>
+<h2> Recipes:</h2>
+<ul>
+  <% @all_recipes.each_with_index do |recipe, index| %>
+    <li><%= recipe.name %>: <%= recipe.description %> </li>
+  <% end %>
+</ul>
+<h2><a href=/new>New Recipe</a></h2>
